@@ -3,6 +3,9 @@ const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    corePlugins: {
+        container: false, // Désactive la classe container de Tailwind
+    },
     content: [
         './*.php',
         './**/*.php',
